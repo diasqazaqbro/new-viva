@@ -584,6 +584,23 @@ h6 {
   padding: 3px 45px 15px 45px;
 }
 
+.comp__btn2 {
+  font-family: "inter", Arial;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.5px;
+  fill: #f92056;
+  color: #f92056;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #f92056;
+  border-radius: 40px 40px 40px 40px;
+  padding: 3px 45px 15px 45px;
+  display: none;
+
+}
+
 .comp__subtitle {
   color: #00deff;
   font-family: "Yellowtail", Arial;
@@ -852,7 +869,7 @@ h6 {
     padding: 120px;
   }
   .comp__suptitle {
-    display: none;
+    font-size: 18px;
   }
 
   .comp__title {
@@ -860,8 +877,12 @@ h6 {
   }
 
   .comp__btn {
+    display: none;
+  }
+  .comp__btn2 {
+    display: block;
     font-size: 14px;
-    padding: 2px 40px 12px 40px;
+    margin-top: 10px;
   }
 
   .comp__subtitle {
