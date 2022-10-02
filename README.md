@@ -2,6 +2,6 @@
 _____
 :wrench: Write on **html**, **css** and **bootstrap**
 
-:computer: addres: https://diasqazaqbro.github.io/new-viva-for-ruslana/
+:computer: addres: https://diasqazaqbro.github.io/new-viva/
 
 ### create by Adilov Dias, helped a little Abbas
