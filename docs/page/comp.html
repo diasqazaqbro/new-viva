@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <section class="comp">
+    <section id="welcome" class="comp">
       <!-- NavBar -->
       <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <div class="container">
@@ -30,7 +30,22 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
+          <a href="#welcome" id="scroll-top" class="scroll__top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-up-square"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+              />
+            </svg>
+            Навверх
+          </a>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="ms-5 navbar-nav me-auto mb-2">
               <li class="navbar-item">
@@ -54,7 +69,7 @@
                   New Viva
                 </a>
                 <ul
-                  class="dropdown-menu dropdown-menu-dark "
+                  class="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarScrollingDropdown"
                 >
                   <li>
@@ -80,7 +95,8 @@
                   class="nav nav-link"
                   style="color: white"
                   href="./beauty.html"
-                  >Beauty</a
+                  >Beauty
+                  <span class="rounded-pill badge bg-warning">NEW</span></a
                 >
               </li>
               <li class="navbar-item">
@@ -91,7 +107,7 @@
             </ul>
 
             <button class="header__btn">
-              Связаться с нами
+              <a href="tel:87022445300">Связаться с нами</a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -111,20 +127,68 @@
       <!-- NavBar -->
 
       <!-- welcome -->
-      <div class="container">
+      <div  class="container">
         <div class="comp__inner">
           <div class="row">
             <div class="col-8">
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Забронировать в компьютерском клубе:
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">тут позже написать номер</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <h3 class="comp__suptitle">New Viva Cyber club 's</h3>
               <h1 class="comp__title">
                 ИГРАЕМ,<br />
                 КАК ДОМА
-              <button class="comp__btn2">Забронировать<br />+77022445300</button>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="comp__btn2"
+                >
+                  Забронировать<br />+77022445300
+                </button>
               </h1>
             </div>
             <div class="col-4 my-5">
               <div class="comp__subtitle">Myrzakent</div>
-              <button class="comp__btn">Забронировать<br />+77022445300</button>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="comp__btn"
+              >
+                Забронировать<br />+77022445300
+              </button>
             </div>
           </div>
         </div>
@@ -146,14 +210,14 @@
         </div>
         <div class="cabout__item">
           <div class="cabout__item1">
-            <img src="../img/comp1.jpg" alt="" />
+            <img src="../img/comp3.jpg" alt="" />
             <h1 class="cabout__name">Open -24/7</h1>
             <div class="cabout__supname">Работает все время для вас</div>
           </div>
         </div>
         <div class="cabout__item">
           <div class="cabout__item1">
-            <img src="../img/comp1.jpg" alt="" />
+            <img src="../img/comp2.jpg" alt="" />
             <h1 class="cabout__name">Еда и напитки</h1>
             <div class="cabout__supname">
               В компах вы можете купить напитки и еду
@@ -249,8 +313,8 @@
                 >
                   <div class="accordion-body about__p">
                     <ul>
-                      <li>Lorem ipsum dolor sit amet.</li>
-                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>i5 11th</li>
+                      <li>gtx 1660 super</li>
                     </ul>
                   </div>
                 </div>
@@ -298,8 +362,8 @@
                 >
                   <div class="accordion-body about__p">
                     <ul>
-                      <li>Lorem ipsum dolor sit amet.</li>
-                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Супер пупер мышка спышка</li>
+                      <li>Нифиговая клава</li>
                     </ul>
                   </div>
                 </div>
