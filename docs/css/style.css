@@ -23,11 +23,6 @@
   padding: 12px 24px;
   background: transparent;
   border-radius: 100px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,9 +31,25 @@
   transition: background-color 0.5s, border 0.5s;
 }
 
+.header__btn a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: white;
+}
+
 .header__btn:hover {
-  color: black;
   background-color: #ffffff;
+  color: black;
+
+}
+
+.header__btn a:hover {
+  color: black;
+
 }
 
 /* Footer */
@@ -362,7 +373,6 @@ h6 {
   font-weight: normal;
   font-size: 18px;
   line-height: 20px;
-  color: #ff8c1c;
   margin-top: 8px;
 }
 
@@ -381,7 +391,6 @@ h6 {
 
 .work__button {
   padding: 16px 28px;
-  background: #ff8c1c;
   border-radius: 100px;
   font-family: Inter;
   font-style: normal;
@@ -392,7 +401,6 @@ h6 {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  border: 1px solid #ff8c1c;
   transition: background-color 0.5s, border 0.5s;
 }
 
